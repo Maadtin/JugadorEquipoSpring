@@ -37,8 +37,6 @@ public interface JugadorRepository extends JpaRepository<Jugador, Long> {
 
 	// Jugador de los LAKERS  que tiene más CANASTAS
 	@Query("SELECT j from Jugador j WHERE j.equipo.nombreEquipo = :nom ORDER BY j.numCanastas DESC")
-	List<Jugador> findJugadorByEquipoAndMaxCanastas(
-					@Param("nom") String nom, Pageable page
-	);
+	List<Jugador> findJugadorByEquipoAndMaxCanastas( @Param("nom") String nom, Pageable page );
 
 }

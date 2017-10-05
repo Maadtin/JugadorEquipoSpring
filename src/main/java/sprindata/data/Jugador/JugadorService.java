@@ -134,7 +134,7 @@ public class JugadorService {
 		}
 
 		
-		System.out.println("****************************************************");
+		System.out.println("**************** JUGADOR CON MÁS CANASTAS DEL EQUIPO LAKERS ****************");
 		System.out.println(jugadorRepository.findJugadorByEquipoAndMaxCanastas("Lakers", new PageRequest(0, 1))); ;
 		System.out.println("****************************************************");
 
